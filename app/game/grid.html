@@ -1,0 +1,5 @@
+<div ng-repeat="row in vm.grid.rows" class="mine-row">
+	<div ng-repeat="spot in row.spots" class="mine-spot" ng-class="{'revealed-spot' : spot.isRevealed, 'unrevealed-spot' : !spot.isRevealed }" ng-click="vm.revealSpot(spot)">
+		{{ spot.value }}
+	</div>
+</div>

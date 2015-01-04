@@ -1,0 +1,29 @@
+@unrevealedMineColor:#E0E0E0;
+@revealedMineColor:#ED9087;
+
+.mine-row {
+	clear: both;
+}
+
+.mine-spot {
+	width: 20px;
+	height: 20px;
+	float: left;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	text-align: center;
+}
+
+.mine-spot:hover {
+	background-color:rgba(0,0,0,0.5);
+}
+
+.unrevealed-spot {
+	background-color: @revealedMineColor;
+	font-size:0;
+}
+
+.revealed-spot {
+	background-color: @unrevealedMineColor;
+}

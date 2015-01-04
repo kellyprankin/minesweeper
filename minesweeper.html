@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="minesweeper">
+	<head>
+		<link rel="stylesheet/less" type="text/css" href="css/gamestyles.less">
+	</head>
+	<body>
+		 <div ng-controller="Game as vm" class="ng-cloak">
+			 <div ng-hide="vm.isLostGame">
+				<griddisplay></griddisplay>
+			 </div>
+			
+			<div ng-show="vm.isLostGame" class="ng-cloak hidden">
+				<gamelost></gamelost>
+			</div>
+			
+		 </div>
+	
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.2/less.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.js"></script>
+		 <script src="app/app.js"></script>
+		 <script src="app/game/gamecontroller.js"></script>
+		 <script src="app/game/gridfactory.js"></script>
+		 <script src="app/game/griddisplay.js"></script>
+		 <script src="app/game/gamelost.js"></script>
+	</body>
+</html>
